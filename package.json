@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./src/index.js",
-    "build": "webpack --mode development",
+    "build": "webpack",
     "heroku-postbuild": "echo Skip build on Heroku"
   },
   "author": "",
@@ -16,7 +16,8 @@
   },
   "devDependencies": {
     "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-node-externals": "^1.7.2"
   },
   "heroku-run-build-script": true
 }

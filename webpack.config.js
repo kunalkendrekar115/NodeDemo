@@ -1,6 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
-
+var nodeExternals = require('webpack-node-externals');
 
 module.exports = {
   entry: {
@@ -23,10 +23,7 @@ module.exports = {
       {
         // Transpiles ES6-8 into ES5
         test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
+        exclude: /node_modules/
       }
     ]
   }
