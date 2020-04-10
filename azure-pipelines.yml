@@ -17,6 +17,7 @@ steps:
 
 - script: |
     npm install
+    npm install --production
     npm run build
   displayName: 'npm install and build'
 
@@ -24,3 +25,4 @@ steps:
   inputs:
     path: $(System.DefaultWorkingDirectory)
     artifact: WebApp
+
